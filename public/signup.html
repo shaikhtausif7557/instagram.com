@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <style>
+       body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+    color: #262626;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+.logo {
+    width: 175px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.fb-button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fb-icon {
+    width: 20px;
+}
+
+.or {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.or-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.or-text {
+    margin: 0 10px;
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.info-text {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: 15px;
+}
+
+.info-text a {
+    color: #00376b;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        <h2>Sign up to see photos and videos from your friends.</h2>
+        <button class="fb-button"><img class="fb-icon" src="https://www.freeiconspng.com/uploads/facebook-png-icon-follow-us-facebook-1.png" alt="fb">Log in with Facebook</button>
+        <div class="or">
+            <div class="or-line"></div>
+            <span class="or-text">OR</span>
+            <div class="or-line"></div>
+        </div>
+        <form action="/signup" method="POST">
+            <input type="text" name="mobile_email" placeholder="Mobile Number or Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="text" name="username" placeholder="Username" required>
+            <p class="info-text">People who use our service may have uploaded your contact information to Instagram. <a href="#">Learn More</a><br>
+            By signing up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>.</p>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="login-link">Have an account? <a href="/">Log in</a></p>
+    </div>
+</body>
+</html>
